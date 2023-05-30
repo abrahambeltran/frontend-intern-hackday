@@ -1,10 +1,7 @@
 # Search for an organizations GitHub
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+React web application to get all of the repositories from a github organization and display the results on a web page. Organizations can be searched for and repositories can be pressed to find all of the commits done in that repository.
+## Installation
+In the project directory, you run npm install and then run:
 
 ### `npm start`
 
@@ -23,3 +20,15 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+
+## TODO:
+
+- [x] Create MVC
+- [x] Implement search function
+- [x] Implement commit list when clicking on repository info
+- [ ] Refactor for more modular components
+- [ ] Fix layout to update page view when a repository is clicked
+- [ ] Implement error checking for input
+- [ ] Add information to webpage
+- [ ] Find a way to pull all repositories from an organization using the API (currently pulls most repos)
