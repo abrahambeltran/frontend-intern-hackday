@@ -70,12 +70,12 @@ const RepoList = ({ orgName, onSearch }) => {
           <button type="submit">Search</button>
         </form>
       </div>
-      <div className="flex flex-row m-6">
+      <div className="m-6">
         {orgName && (
-          <ul className="flex flex-row m-6">
+          <ul className="m-6">
             {repositories.map((repo) => (
               <li key={repo.id} onClick={() => handleRepoClick(repo.name)}>
-                <h3>{repo.name}</h3>
+                <h3 className="font-bold">{repo.name}</h3>
                 <p>Language: {repo.language}</p>
                 <p>Description: {repo.description}</p>
                 <p>Stars: {repo.stargazers_count}</p>
@@ -86,14 +86,14 @@ const RepoList = ({ orgName, onSearch }) => {
           </ul>
         )}
       </div>
-      <div className="flex flex-row m-6">
+      <div className="m-6">
         {selectedRepo && (
           <div className="m-6">
             <h2>Commits for {selectedRepo}</h2>
-            <ul className="flex flex-row m-6">
+            <ul className="m-6">
               {commits.map((commit) => (
                 <li key={commit.sha}>
-                  <h4>{commit.commit.message}</h4>
+                  <h4 className="font-bold">{commit.commit.message}</h4>
                   <p>Committer: {commit.commit.author.name}</p>
                   <p>Commit Hash: {commit.sha}</p>
                   <p>Date Created: {commit.commit.author.date}</p>
