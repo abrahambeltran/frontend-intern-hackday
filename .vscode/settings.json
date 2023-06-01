@@ -1,6 +1,0 @@
-{
-  "eslint.validate": ["javascript"],
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false
-  }
-}
